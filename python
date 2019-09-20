@@ -4,9 +4,19 @@
 #words together in the following list
 still_words = ['1','22','333','4444','55555']
 
+for i in still_words:
+    print(len(i))
+
 
 # 2 - get the numeric values of the list items (eg. the value of '22' is 22), and print the sum.
 
+sum_i = 0
+for i in still_words:
+    i = int(i)
+    sum_i = sum_i + i
+    print(i, sum_i)
 
 # 3 - How do you fix the typo in this list, without rewriting the whole list?
 words = ['one','two','three','for','five']
+words[3] = 'four'
+words
